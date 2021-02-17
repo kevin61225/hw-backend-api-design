@@ -6,7 +6,7 @@ You are now an employee of the company, and currently we use Amazon Web Service 
 
 New raw data will be restored in the `S3` bucket `everyday at 4 A.M`. in `.xlsx` format, each file contains at least `500,000` records and there will be at least `1000` files in one day.
 
-Your goal is to `design the ETL process` with these data and retrieve these data via `API service` eventually.  
+Your goal is to `design the ETL process` with these data and retrieve the processed data via `API service` eventually.  
 
 ## Prerequisite
 
