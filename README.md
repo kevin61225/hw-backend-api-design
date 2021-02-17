@@ -20,7 +20,7 @@ Your goal is to `design the ETL process` with these data and retrieve these data
 
 ## Target
 
-1. Design and draw architecture for the data process and show where can API server retrieve the processed data.
+1. Design and draw architecture for the whole data process flow, including how API server retrieve the processed data.
 2. Design and draw table schema. Use the `.csv` file in `data` folder, your table __MUST__ have the following columns down below.
       | Column | Description |
       | -- | -- |
@@ -32,7 +32,7 @@ Your goal is to `design the ETL process` with these data and retrieve these data
       | lineItem/UsageStartDate |  The start date and time for the line item in UTC, inclusive. The format is YYYY-MM-DDTHH:mm:ssZ. |
       | lineItem/UsageEndDate | The end date and time for the corresponding line item in UTC, exclusive. The format is YYYY-MM-DDTHH:mm:ssZ. |
       | product/ProductName | The full name of the AWS service. Use this column to filter AWS usage by AWS service. Sample values: AWS Backup, AWS Config, Amazon Registrar, Amazon Elastic File System, Amazon Elastic Compute Cloud |
-3. Design 2 APIs with the following requirements 
+3. Design 2 APIs according to the following requirements 
     1. Get __lineItem/UnblendedCost__ grouping by __product/productname__
         - Input
           | Column | Required |
@@ -78,13 +78,16 @@ Your goal is to `design the ETL process` with these data and retrieve these data
 
 1. Upload codes to your __GitHub__ and __provide repo URL__.
 2. Include a __README.md__ file in __the root of repo__.
-3. Provide your __Architecture__ and describe how it works to __README.md__.
-4. Provide your __API spec__, __API URLs__, and __DB schema__ to __README.md__.
-5. Use any kind of framework, e.g. __ASP.NET 5__, __Django__, __Flask__.
-6. *(Optional)* Describe how you reduce the response time / improve performance to __README.md__.
+3. Provide the following elements in  __README.md__
+   1. Charts of __architecture__ and describe how it works
+   2. __API spec__, __API URLs__
+   3. __DB schema__
+   4. Describe how to use your API service
+   5. *(Optional)* Describe how you reduce the response time / improve performance
+4. Use any kind of framework, e.g. __ASP.NET 5__, __Django__, __Flask__.
 
 ## Notice
 
 * Once you finished the assignment, send an email back to the one who contacted you.
 * Leave comments to __README.md__ if there is any.
-* You only need to implement the API part.
+* For the implementation, you don't need to do the ETL part but only the API service.
