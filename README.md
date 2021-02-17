@@ -1,4 +1,4 @@
-# Assignment - API Design & Implementation
+# Assignment - Service Design & Implementation
 
 ## Scenario
 
