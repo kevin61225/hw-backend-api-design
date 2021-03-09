@@ -2,15 +2,13 @@
 
 ## Scenario
 
-You are now an employee of the company, and currently we use Amazon Web Service  to hold our systems. As a senior backend engineer, your first mission is to design and implement a new flow for one of our daily data processes since the current one takes a long time to finish.
+You are now an employee of the companys, as a senior backend engineer, your first mission is to design and implement a new flow for one of our daily data processes since the current one takes a long time to finish.
 
-New raw data will be restored in the `S3` bucket `everyday at 4 A.M`. in `.xlsx` format, each file contains at least `500,000` records and there will be at least `1000` files in one day.
+New raw data will be restored in a storage space `everyday at 4 A.M`. in `.csv` format, each file contains at least `500,000` records and there will be at least `1000` files in one day.
 
 Your goal is to `design the ETL process` with these data and retrieve the processed data via `API service` eventually.  
 
 ## Prerequisite
-
-* You can only use cloud services to design your architecture, e.g. `Amazon Web Service`, `Microsoft Azure`, `Google Cloud Platform`.
 
 * File name of raw data > `{aws-account}-{yyyy-MM-dd}-raw.xlsx`
   * e.g. `987654321-2021-01-02-raw.xlsx`.
@@ -32,7 +30,7 @@ Your goal is to `design the ETL process` with these data and retrieve the proces
       | lineItem/UsageStartDate |  The start date and time for the line item in UTC, inclusive. The format is YYYY-MM-DDTHH:mm:ssZ. |
       | lineItem/UsageEndDate | The end date and time for the corresponding line item in UTC, exclusive. The format is YYYY-MM-DDTHH:mm:ssZ. |
       | product/ProductName | The full name of the AWS service. Use this column to filter AWS usage by AWS service. Sample values: AWS Backup, AWS Config, Amazon Registrar, Amazon Elastic File System, Amazon Elastic Compute Cloud |
-3. Design 2 APIs according to the following requirements 
+3. Design 2 APIs according to the following requirements. You can add more columns to achieve your intended purpose. 
     1. Get __lineItem/UnblendedCost__ grouping by __product/productname__
         - Input
           | Column | Required |
@@ -69,10 +67,11 @@ Your goal is to `design the ETL process` with these data and retrieve the proces
             }
         ```
 4. Your can only use __Python__ or __C#__ to implement APIs.
-5. *(Optional)* Use any mechanism to reduce the process time during data process flow.
-6. *(Optional)* You __can add more input arguments__ to your APIs to achieve paginaton strategy.
-7. *(Optional)* Make the API service to be container-based.
-8. *(Optional)* Use any mechanism to reduce response time when calling the APIs, which can be algorithm or caching.
+5. Use any kind of framework, e.g. __ASP.NET 5__, __Django__, __Flask__.
+6. *(Optional)* Use any mechanism to reduce the process time during data process flow.
+7. *(Optional)* You __can add more input arguments__ to your APIs to achieve paginaton strategy.
+8. *(Optional)* Make the API service to be container-based.
+9. *(Optional)* Use any mechanism to reduce response time when calling the APIs, which can be algorithm or caching.
 
 ## Deliverable
 
@@ -84,7 +83,7 @@ Your goal is to `design the ETL process` with these data and retrieve the proces
    3. __DB schema__
    4. Describe how to use your API service
    5. *(Optional)* Describe how you reduce the response time / improve performance
-4. Use any kind of framework, e.g. __ASP.NET 5__, __Django__, __Flask__.
+
 
 ## Notice
 
