@@ -2,7 +2,7 @@
 
 ## Scenario
 
-You are now an employee of the companys, as a senior backend engineer, your first mission is to design and implement a new flow for one of our daily data processes since the current one takes a long time to finish.
+You are now an employee of the company, as a senior backend engineer, your first mission is to design and implement a new flow for one of our daily data processes since the current one takes a long time to finish.
 
 New raw data will be restored in a storage space `everyday at 4 A.M`. in `.csv` format, each file contains at least `500,000` records and there will be at least `1000` files in one day.
 
